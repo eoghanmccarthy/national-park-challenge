@@ -4,14 +4,16 @@ import { z } from "zod";
 
 // National Parks table
 export const parks = pgTable("parks", {
-  id: serial("id").primaryKey(),
+  id: integer("id").primaryKey(),
   name: text("name").notNull(),
   description: text("description").notNull(),
   state: text("state").notNull(), 
-  yearEstablished: integer("year_established").notNull(),
+  established: text("established").notNull(),
   rating: integer("rating").notNull().default(1500), // ELO rating, default 1500
-  parkType: text("park_type").notNull(), // forest, canyon, mountain, etc.
-  imageUrl: text("image_url"), // URL to the park image
+  type: text("type").notNull(), // forest, canyon, mountain, etc.
+  imageUrl: text("imageurl"), // URL to the park image,
+  url: text("url"),
+  area: text("area"),
 });
 
 // Votes table

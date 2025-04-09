@@ -19,7 +19,7 @@ export default function ParkCard({ park, onVote, loading = false, colorScheme }:
       desert: "desert",
       urban: "urban",
     };
-    colorScheme = typeToColor[park.parkType] || "forest";
+    colorScheme = typeToColor[park.type] || "forest";
   }
 
   // Get the background and hover colors based on colorScheme
@@ -71,7 +71,7 @@ export default function ParkCard({ park, onVote, loading = false, colorScheme }:
       urban: "https://upload.wikimedia.org/wikipedia/commons/3/38/Gateway_Arch_at_night_-_Wikimedia_Foundation.jpg"
     };
     
-    return fallbacks[park.parkType as keyof typeof fallbacks] || fallbacks.forest;
+    return fallbacks[park.type as keyof typeof fallbacks] || fallbacks.forest;
   };
 
   return (
@@ -91,7 +91,7 @@ export default function ParkCard({ park, onVote, loading = false, colorScheme }:
 
       <div className="p-5">
         <div className="flex items-center mb-3">
-          <ParkIcon parkType={park.parkType} colorScheme={colorScheme} className="mr-2" />
+          <ParkIcon parkType={park.type} colorScheme={colorScheme} className="mr-2" />
           <h3 className="font-heading font-semibold text-lg text-stone-dark">
             {park.name}
           </h3>
@@ -106,7 +106,7 @@ export default function ParkCard({ park, onVote, loading = false, colorScheme }:
             {cleanState(park.state)}
           </span>
           <span className="inline-block bg-stone-100 rounded-full px-3 py-1 text-xs font-medium text-stone-dark">
-            Since {park.yearEstablished}
+            Since {park.established}
           </span>
         </div>
       </div>
