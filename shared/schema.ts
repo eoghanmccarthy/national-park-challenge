@@ -11,6 +11,7 @@ export const parks = pgTable("parks", {
   yearEstablished: integer("year_established").notNull(),
   rating: integer("rating").notNull().default(1500), // ELO rating, default 1500
   parkType: text("park_type").notNull(), // forest, canyon, mountain, etc.
+  imageUrl: text("image_url"), // URL to the park image
 });
 
 // Votes table

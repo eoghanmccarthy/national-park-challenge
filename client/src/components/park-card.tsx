@@ -42,11 +42,32 @@ export default function ParkCard({ park, onVote, loading = false, colorScheme }:
     }
   };
 
+  // Function to handle missing or broken image URLs
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+    // Hide the image container when image fails to load
+    const imgContainer = e.currentTarget.parentElement;
+    if (imgContainer) {
+      imgContainer.style.display = 'none';
+    }
+  };
+
   return (
     <div 
       className="park-card bg-white rounded-lg shadow-md overflow-hidden w-full md:w-2/5 border border-stone-100 transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg" 
       data-park-id={park.id}
     >
+      {/* Park Image */}
+      {park.imageUrl && (
+        <div className="park-image-container h-48 overflow-hidden">
+          <img 
+            src={park.imageUrl} 
+            alt={`${park.name} National Park`} 
+            className="w-full h-full object-cover"
+            onError={handleImageError}
+          />
+        </div>
+      )}
+
       <div className="p-5">
         <div className="flex items-center mb-3">
           <ParkIcon parkType={park.parkType} colorScheme={colorScheme} className="mr-2" />
