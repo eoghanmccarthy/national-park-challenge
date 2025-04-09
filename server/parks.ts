@@ -70,7 +70,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 1930,
     "rating": 1500,
     "parkType": "canyon",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Carlsbad_Interior_Formations.jpg/Carlsbad_Interior_Formations.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Carlsbad_Interior_Formations.jpg"
   },
   {
     "id": 12,
@@ -80,7 +80,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 1980,
     "rating": 1500,
     "parkType": "water",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/82/Santa_Cruz_Island_CA_DSC_4323_ad.JPG/Santa_Cruz_Island_CA_DSC_4323_ad.JPG"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/82/Santa_Cruz_Island_CA_DSC_4323_ad.JPG"
   },
   {
     "id": 13,
@@ -90,7 +90,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 2003,
     "rating": 1500,
     "parkType": "forest",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Baldcypress_%28Taxodium_distichum%29_on_Congaree_National_Park_Low_Boardwalk_trail.jpg/Baldcypress_%28Taxodium_distichum%29_on_Congaree_National_Park_Low_Boardwalk_trail.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Baldcypress_%28Taxodium_distichum%29_on_Congaree_National_Park_Low_Boardwalk_trail.jpg"
   },
   {
     "id": 14,
@@ -100,7 +100,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 1902,
     "rating": 1500,
     "parkType": "water",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/Aerial_Crater_Lake_%28cropped%29.jpg/Aerial_Crater_Lake_%28cropped%29.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/Aerial_Crater_Lake_%28cropped%29.jpg"
   },
   {
     "id": 16,
@@ -110,7 +110,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 1994,
     "rating": 1500,
     "parkType": "desert",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Isolated_Desert.jpg/Isolated_Desert.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Isolated_Desert.jpg"
   },
   {
     "id": 17,
@@ -120,7 +120,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 1917,
     "rating": 1500,
     "parkType": "mountain",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Wonder_Lake_and_Denali.jpg/Wonder_Lake_and_Denali.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/91/Wonder_Lake_and_Denali.jpg"
   },
   {
     "id": 18,
@@ -130,17 +130,17 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 1992,
     "rating": 1500,
     "parkType": "water",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Fort-Jefferson_Dry-Tortugas.jpg/Fort-Jefferson_Dry-Tortugas.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Fort-Jefferson_Dry-Tortugas.jpg"
   },
   {
     "id": 19,
     "name": "Everglades",
     "description": "The Everglades are the largest tropical wilderness in the United States, a unique ecosystem of subtropical wetlands.",
-    "state": "Florida, 25°19′N 80°56′W﻿ / ﻿25.32°N 80.93°W﻿ / 25.32; -80.93﻿ (Everglades)",
+    "state": "Florida",
     "yearEstablished": 1934,
     "rating": 1500,
     "parkType": "water",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Sunset_over_the_River_of_Grass%2C_NPSphoto%2C_G.Gardner_%289255157507%29.jpg/Sunset_over_the_River_of_Grass%2C_NPSphoto%2C_G.Gardner_%289255157507%29.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Sunset_over_the_River_of_Grass%2C_NPSphoto%2C_G.Gardner_%289255157507%29.jpg"
   },
   {
     "id": 20,
@@ -150,7 +150,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 0,
     "rating": 1500,
     "parkType": "forest",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Remote_river_in_Gates_of_the_Arctic_%2816524035298%29.jpg/Remote_river_in_Gates_of_the_Arctic_%2816524035298%29.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Remote_river_in_Gates_of_the_Arctic_%2816524035298%29.jpg"
   },
   {
     "id": 21,
@@ -160,7 +160,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 1960,
     "rating": 1500,
     "parkType": "urban",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/de/St_Louis_night_expblend.jpg/St_Louis_night_expblend.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/de/St_Louis_night_expblend.jpg"
   },
   {
     "id": 22,
@@ -170,7 +170,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 1910,
     "rating": 1500,
     "parkType": "mountain",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/51/Mountain_Goat_at_Hidden_Lake.jpg/Mountain_Goat_at_Hidden_Lake.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/51/Mountain_Goat_at_Hidden_Lake.jpg"
   },
   {
     "id": 23,
@@ -180,7 +180,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 1980,
     "rating": 1500,
     "parkType": "water",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Glacier_Bay_National_Park%2C_July_28%2C_2012.jpg/Glacier_Bay_National_Park%2C_July_28%2C_2012.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Glacier_Bay_National_Park%2C_July_28%2C_2012.jpg"
   },
   {
     "id": 24,
@@ -190,7 +190,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 1919,
     "rating": 1500,
     "parkType": "canyon",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Dawn_on_the_S_rim_of_the_Grand_Canyon_%288645178272%29.jpg/Dawn_on_the_S_rim_of_the_Grand_Canyon_%288645178272%29.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Dawn_on_the_S_rim_of_the_Grand_Canyon_%288645178272%29.jpg"
   },
   {
     "id": 25,
@@ -200,7 +200,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 1929,
     "rating": 1500,
     "parkType": "mountain",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Barns_grand_tetons.jpg/Barns_grand_tetons.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Barns_grand_tetons.jpg"
   },
   {
     "id": 26,
@@ -210,7 +210,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 0,
     "rating": 1500,
     "parkType": "forest",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/78/Upper_Lehman_Creek.jpg/Upper_Lehman_Creek.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/78/Upper_Lehman_Creek.jpg"
   },
   {
     "id": 27,
@@ -220,7 +220,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 0,
     "rating": 1500,
     "parkType": "forest",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/74/Sun_and_Shadow_Patterns_on_Dunes_%2828471118064%29.jpg/Sun_and_Shadow_Patterns_on_Dunes_%2828471118064%29.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/74/Sun_and_Shadow_Patterns_on_Dunes_%2828471118064%29.jpg"
   },
   {
     "id": 28,
@@ -230,7 +230,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 1934,
     "rating": 1500,
     "parkType": "forest",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Foothills_Parkway%2C_November_2018--Joye_Ardyn_Durham_%2831031302587%29.jpg/Foothills_Parkway%2C_November_2018--Joye_Ardyn_Durham_%2831031302587%29.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Foothills_Parkway%2C_November_2018--Joye_Ardyn_Durham_%2831031302587%29.jpg"
   },
   {
     "id": 29,
@@ -240,7 +240,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 0,
     "rating": 1500,
     "parkType": "forest",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Guadalupe_Peak_from_Hunter_Peak.jpg/Guadalupe_Peak_from_Hunter_Peak.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Guadalupe_Peak_from_Hunter_Peak.jpg"
   },
   {
     "id": 30,
@@ -250,7 +250,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 1961,
     "rating": 1500,
     "parkType": "mountain",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/Haleakala_National_Park_02.jpg/Haleakala_National_Park_02.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/48/Haleakala_National_Park_02.jpg"
   },
   {
     "id": 31,
@@ -260,7 +260,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 1916,
     "rating": 1500,
     "parkType": "mountain",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Sulfur_dioxide_emissions_from_the_Halemaumau_vent_04-08-1_1.jpg/Sulfur_dioxide_emissions_from_the_Halemaumau_vent_04-08-1_1.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Sulfur_dioxide_emissions_from_the_Halemaumau_vent_04-08-1_1.jpg"
   },
   {
     "id": 34,
@@ -270,7 +270,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 1940,
     "rating": 1500,
     "parkType": "forest",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7c/IsleRoyalePlane.jpg/IsleRoyalePlane.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7c/IsleRoyalePlane.jpg"
   },
   {
     "id": 35,
@@ -280,7 +280,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 1994,
     "rating": 1500,
     "parkType": "desert",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Joshua_Tree_-_Rock_formation_in_Real_Hidden_Valley_1.jpg/Joshua_Tree_-_Rock_formation_in_Real_Hidden_Valley_1.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Joshua_Tree_-_Rock_formation_in_Real_Hidden_Valley_1.jpg"
   },
   {
     "id": 36,
@@ -290,7 +290,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 1912,
     "rating": 1500,
     "parkType": "forest",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Grizzly_mama_bear_with_spring_cubs._Naknek_Lake%2C_Katmai_National_Park%2C_Alaska.jpg/Grizzly_mama_bear_with_spring_cubs._Naknek_Lake%2C_Katmai_National_Park%2C_Alaska.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Grizzly_mama_bear_with_spring_cubs._Naknek_Lake%2C_Katmai_National_Park%2C_Alaska.jpg"
   },
   {
     "id": 38,
@@ -300,7 +300,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 1940,
     "rating": 1500,
     "parkType": "forest",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3a/KingsCanyonNP.JPG/KingsCanyonNP.JPG"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3a/KingsCanyonNP.JPG"
   },
   {
     "id": 41,
@@ -310,7 +310,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 1915,
     "rating": 1500,
     "parkType": "forest",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Lassen_Peak_and_Lake_Helen.jpg/Lassen_Peak_and_Lake_Helen.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Lassen_Peak_and_Lake_Helen.jpg"
   },
   {
     "id": 42,
@@ -320,7 +320,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 1941,
     "rating": 1500,
     "parkType": "canyon",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Mammoth_Cave_National_Park_007.jpg/Mammoth_Cave_National_Park_007.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Mammoth_Cave_National_Park_007.jpg"
   },
   {
     "id": 43,
@@ -330,7 +330,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 1906,
     "rating": 1500,
     "parkType": "canyon",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Mesa_Verde_National_Park_Cliff_Palace_2006_09_12.jpg/Mesa_Verde_National_Park_Cliff_Palace_2006_09_12.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Mesa_Verde_National_Park_Cliff_Palace_2006_09_12.jpg"
   },
   {
     "id": 45,
@@ -340,7 +340,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 0,
     "rating": 1500,
     "parkType": "forest",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/New_River_Gorge_Bridge.jpg/New_River_Gorge_Bridge.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/New_River_Gorge_Bridge.jpg"
   },
   {
     "id": 46,
@@ -350,7 +350,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 0,
     "rating": 1500,
     "parkType": "forest",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Cascade_Pass.jpg/Cascade_Pass.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Cascade_Pass.jpg"
   },
   {
     "id": 47,
@@ -360,7 +360,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 1938,
     "rating": 1500,
     "parkType": "forest",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Cedar_Creek_Abbey_Island_Ruby_Beach.jpg/Cedar_Creek_Abbey_Island_Ruby_Beach.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Cedar_Creek_Abbey_Island_Ruby_Beach.jpg"
   },
   {
     "id": 48,
@@ -370,7 +370,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 0,
     "rating": 1500,
     "parkType": "forest",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/51/Jasper_Forest_at_Petrified_Forest_NP_in_AZ_12.jpg/Jasper_Forest_at_Petrified_Forest_NP_in_AZ_12.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/51/Jasper_Forest_at_Petrified_Forest_NP_in_AZ_12.jpg"
   },
   {
     "id": 50,
@@ -380,7 +380,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 1968,
     "rating": 1500,
     "parkType": "forest",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/de/Redwood_National_Park%2C_fog_in_the_forest.jpg/Redwood_National_Park%2C_fog_in_the_forest.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/de/Redwood_National_Park%2C_fog_in_the_forest.jpg"
   },
   {
     "id": 51,
@@ -390,7 +390,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 1915,
     "rating": 1500,
     "parkType": "mountain",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Bierstadt_Lake%2C_Rocky_Mountain_National_Park%2C_USA.jpg/Bierstadt_Lake%2C_Rocky_Mountain_National_Park%2C_USA.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Bierstadt_Lake%2C_Rocky_Mountain_National_Park%2C_USA.jpg"
   },
   {
     "id": 53,
@@ -400,7 +400,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 1890,
     "rating": 1500,
     "parkType": "forest",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Sequoia_National_Park%2C_photo_by_Reeve_Bruner%2C_2016.jpg/Sequoia_National_Park%2C_photo_by_Reeve_Bruner%2C_2016.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Sequoia_National_Park%2C_photo_by_Reeve_Bruner%2C_2016.jpg"
   },
   {
     "id": 54,
@@ -410,7 +410,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 0,
     "rating": 1500,
     "parkType": "forest",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/63/Early_Fall_at_Dark_Hollow_Falls_%2822028259442%29.jpg/Early_Fall_at_Dark_Hollow_Falls_%2822028259442%29.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/63/Early_Fall_at_Dark_Hollow_Falls_%2822028259442%29.jpg"
   },
   {
     "id": 60,
@@ -420,7 +420,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 1980,
     "rating": 1500,
     "parkType": "forest",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Guyot_Hills%2C_Icy_Bay%2C_and_Mount_St._Elias_%2821601563492%29.jpg/Guyot_Hills%2C_Icy_Bay%2C_and_Mount_St._Elias_%2821601563492%29.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Guyot_Hills%2C_Icy_Bay%2C_and_Mount_St._Elias_%2821601563492%29.jpg"
   },
   {
     "id": 61,
@@ -430,7 +430,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 1872,
     "rating": 1500,
     "parkType": "forest",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/Grand_Prismatic_Spring_2013.jpg/Grand_Prismatic_Spring_2013.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/Grand_Prismatic_Spring_2013.jpg"
   },
   {
     "id": 62,
@@ -440,7 +440,7 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 1890,
     "rating": 1500,
     "parkType": "mountain",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Half_Dome_from_Glacier_Point%2C_Yosemite_NP_-_Diliff.jpg/Half_Dome_from_Glacier_Point%2C_Yosemite_NP_-_Diliff.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Half_Dome_from_Glacier_Point%2C_Yosemite_NP_-_Diliff.jpg"
   },
   {
     "id": 63,
@@ -450,6 +450,6 @@ export const nationalParksData: Park[] = [
     "yearEstablished": 0,
     "rating": 1500,
     "parkType": "forest",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/Zion_angels_landing_view.jpg/Zion_angels_landing_view.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/Zion_angels_landing_view.jpg"
   }
 ];

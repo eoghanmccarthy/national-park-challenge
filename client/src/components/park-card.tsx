@@ -16,8 +16,8 @@ export default function ParkCard({ park, onVote, loading = false, colorScheme }:
       canyon: "canyon",
       mountain: "mountain",
       water: "water",
-      desert: "canyon",
-      urban: "mountain",
+      desert: "desert",
+      urban: "urban",
     };
     colorScheme = typeToColor[park.parkType] || "forest";
   }
@@ -32,11 +32,11 @@ export default function ParkCard({ park, onVote, loading = false, colorScheme }:
       case "mountain":
         return "bg-mountain hover:bg-mountain-dark";
       case "water":
-        return "bg-mountain-light hover:bg-mountain-dark";
+        return "bg-water hover:bg-water-dark";
       case "desert":
-        return "bg-canyon-light hover:bg-canyon-dark";
+        return "bg-desert hover:bg-desert-dark";
       case "urban":
-        return "bg-stone hover:bg-stone-dark";
+        return "bg-urban hover:bg-urban-dark";
       default:
         return "bg-forest hover:bg-forest-dark";
     }
@@ -51,22 +51,43 @@ export default function ParkCard({ park, onVote, loading = false, colorScheme }:
     }
   };
 
+  // Function to clean up state info
+  const cleanState = (state: string): string => {
+    // Remove coordinates and any text after them
+    if (state.includes(",")) {
+      return state.split(",")[0].trim();
+    }
+    return state;
+  };
+
+  // Choose a fallback image based on park type
+  const getFallbackImage = (): string => {
+    const fallbacks = {
+      forest: "https://upload.wikimedia.org/wikipedia/commons/2/29/ForestLake.jpg",
+      canyon: "https://upload.wikimedia.org/wikipedia/commons/f/f9/Canyonlands.jpg",
+      mountain: "https://upload.wikimedia.org/wikipedia/commons/e/e7/Scafell_Pike_Panorama.jpg",
+      water: "https://upload.wikimedia.org/wikipedia/commons/4/46/Mountaintop_lake.jpg",
+      desert: "https://upload.wikimedia.org/wikipedia/commons/b/be/Desert_near_Marrakech%2C_Morocco.jpg",
+      urban: "https://upload.wikimedia.org/wikipedia/commons/3/38/Gateway_Arch_at_night_-_Wikimedia_Foundation.jpg"
+    };
+    
+    return fallbacks[park.parkType as keyof typeof fallbacks] || fallbacks.forest;
+  };
+
   return (
     <div 
-      className="park-card bg-white rounded-lg shadow-md overflow-hidden w-full md:w-2/5 border border-stone-100 transition-all duration-300 hover:transform hover:-translate-y-1 hover:shadow-lg" 
+      className="park-card bg-white rounded-lg shadow-md overflow-hidden w-full md:w-2/5 border border-stone-100 transition-all duration-300 hover:shadow-lg" 
       data-park-id={park.id}
     >
-      {/* Park Image */}
-      {park.imageUrl && (
-        <div className="park-image-container h-48 overflow-hidden">
-          <img 
-            src={park.imageUrl} 
-            alt={`${park.name} National Park`} 
-            className="w-full h-full object-cover"
-            onError={handleImageError}
-          />
-        </div>
-      )}
+      {/* Park Image with Fallback */}
+      <div className="park-image-container h-48 overflow-hidden">
+        <img 
+          src={park.imageUrl || getFallbackImage()} 
+          alt={`${park.name} National Park`} 
+          className="w-full h-full object-cover"
+          onError={handleImageError}
+        />
+      </div>
 
       <div className="p-5">
         <div className="flex items-center mb-3">
@@ -82,7 +103,7 @@ export default function ParkCard({ park, onVote, loading = false, colorScheme }:
 
         <div className="flex justify-between items-center">
           <span className="inline-block bg-stone-100 rounded-full px-3 py-1 text-xs font-medium text-stone-dark">
-            {park.state}
+            {cleanState(park.state)}
           </span>
           <span className="inline-block bg-stone-100 rounded-full px-3 py-1 text-xs font-medium text-stone-dark">
             Since {park.yearEstablished}
