@@ -6,61 +6,61 @@ export const nationalParksData: Park[] = [
     "id": 1,
     "name": "Acadia",
     "description": "Acadia features the tallest mountain on the Atlantic coast of the United States, granite peaks, ocean shoreline, woodlands, and lakes.",
-    "state": "February 26, 1919",
+    "state": "Maine",
     "yearEstablished": 1919,
     "rating": 1500,
     "parkType": "forest",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/76/Bass_Harbor_Lighthouse_b.jpg/Bass_Harbor_Lighthouse_b.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/76/Bass_Harbor_Lighthouse_b.jpg"
   },
   {
     "id": 2,
-    "name": "A white sand beach and verdant peaks",
-    "description": "A white sand beach and verdant peaks National Park, located in October 31, 1988, established in 0.",
-    "state": "October 31, 1988",
-    "yearEstablished": 0,
+    "name": "American Samoa",
+    "description": "American Samoa National Park features stunning beaches, coral reefs, tropical rainforests, and unique Pacific wildlife.",
+    "state": "American Samoa",
+    "yearEstablished": 1988,
     "rating": 1500,
-    "parkType": "forest",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Ofu_Beach_American_Samoa_US_National_Park_Service.jpg/Ofu_Beach_American_Samoa_US_National_Park_Service.jpg"
+    "parkType": "water",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Ofu_Beach_American_Samoa_US_National_Park_Service.jpg"
   },
   {
     "id": 3,
     "name": "Arches",
     "description": "This site features more than 2,000 natural sandstone arches, including the famous Delicate Arch.",
-    "state": "November 12, 1971",
+    "state": "Utah",
     "yearEstablished": 1971,
     "rating": 1500,
     "parkType": "canyon",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Delicate_Arch_sunset.jpg/Delicate_Arch_sunset.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Delicate_Arch_sunset.jpg"
   },
   {
     "id": 5,
     "name": "Big Bend",
     "description": "Named for the prominent bend in the Rio Grande, this park encompasses a large and remote part of the Chihuahuan Desert.",
-    "state": "Texas, 29°15′N 103°15′W﻿ / ﻿29.25°N 103.25°W﻿ / 29.25; -103.25﻿ (Big Bend)",
+    "state": "Texas",
     "yearEstablished": 1944,
     "rating": 1500,
-    "parkType": "mountain",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/On_the_Border_%2839960085292%29.jpg/On_the_Border_%2839960085292%29.jpg"
+    "parkType": "desert",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/4/40/On_the_Border_%2839960085292%29.jpg"
   },
   {
     "id": 8,
     "name": "Bryce Canyon",
     "description": "Bryce Canyon is famous for its unique geology, consisting of a series of horseshoe-shaped amphitheaters carved from the eastern edge of the Paunsaugunt Plateau.",
-    "state": "February 25, 1928",
+    "state": "Utah",
     "yearEstablished": 1928,
     "rating": 1500,
     "parkType": "canyon",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Inspiration_Point_Bryce_Canyon_November_2018_panorama.jpg/Inspiration_Point_Bryce_Canyon_November_2018_panorama.jpg"
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Inspiration_Point_Bryce_Canyon_November_2018_panorama.jpg"
   },
   {
     "id": 10,
-    "name": "Cassidy Arch at Capitol Reef",
-    "description": "Cassidy Arch at Capitol Reef National Park, located in December 18, 1971, established in 0.",
-    "state": "December 18, 1971",
-    "yearEstablished": 0,
+    "name": "Capitol Reef",
+    "description": "Capitol Reef features the Waterpocket Fold, a geological wrinkle in Earth's crust that extends nearly 100 miles and contains spectacular red rock formations.",
+    "state": "Utah",
+    "yearEstablished": 1971,
     "rating": 1500,
-    "parkType": "forest",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Capitol_Reef_National_Park.jpg/Capitol_Reef_National_Park.jpg"
+    "parkType": "canyon",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Capitol_Reef_National_Park.jpg"
   },
   {
     "id": 11,

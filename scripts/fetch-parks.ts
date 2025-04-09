@@ -220,34 +220,85 @@ async function fetchNationalParks() {
             src = 'https://' + src;
           }
           
-          // Get full image URL instead of thumbnail
+          // Fix Wikipedia image URLs
           // Wikipedia thumbnails typically have /thumb/ in the path and end with a size specification like /200px-filename.jpg
-          src = src.replace(/\/thumb\//, '/').replace(/\/\d+px-([^\/]+)$/, '/$1');
+          if (src.includes('/thumb/')) {
+            // Extract the filename without the size specification
+            const parts = src.split('/');
+            // Remove the size specification
+            const filename = parts[parts.length - 1].replace(/^\d+px-/, '');
+            // Reconstruct the URL without /thumb/ and without size specification
+            src = src.replace(/\/thumb\//, '/').split('/').slice(0, -1).join('/') + '/' + filename;
+          }
           
           imageUrl = src;
           break; // Stop once we find an image
         }
       }
       
-      // Extract state information
+      // Extract state information - be smarter about this
       let state = '';
-      // Try to get the state from a link first
-      const stateLinks = $(columns[2]).find('a');
-      if (stateLinks.length) {
-        // Collect all state names in case there are multiple
-        const states: string[] = [];
-        stateLinks.each((i, link) => {
-          const linkText = $(link).text().trim();
-          if (linkText && !linkText.match(/^\[\d+\]$/)) { // Skip footnote references
-            states.push(linkText);
+      
+      // Look for state names specifically in column 2
+      const locationCell = $(columns[2]).text().trim();
+      
+      // Extract just the state(s) from the location text
+      // First, look for U.S. state names at the start
+      const stateNames = [
+        'Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 
+        'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 
+        'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 
+        'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 
+        'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'North Dakota', 'Ohio', 
+        'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 
+        'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 
+        'Wisconsin', 'Wyoming', 'American Samoa', 'District of Columbia', 'Guam', 
+        'Northern Mariana Islands', 'Puerto Rico', 'U.S. Virgin Islands'
+      ];
+      
+      // Try to match any state name in the location text
+      const foundStates: string[] = [];
+      stateNames.forEach(stateName => {
+        if (locationCell.includes(stateName)) {
+          foundStates.push(stateName);
+        }
+      });
+      
+      if (foundStates.length > 0) {
+        state = foundStates.join(', ');
+      } else {
+        // If no states matched, try to extract from links first
+        const stateLinks = $(columns[2]).find('a');
+        if (stateLinks.length) {
+          // Collect all state names in case there are multiple
+          const states: string[] = [];
+          stateLinks.each((i, link) => {
+            const linkText = $(link).text().trim();
+            if (linkText && !linkText.match(/^\[\d+\]$/)) { // Skip footnote references
+              // Check if the link text is a state name
+              if (stateNames.includes(linkText)) {
+                states.push(linkText);
+              }
+            }
+          });
+          if (states.length > 0) {
+            state = states.join(', ');
           }
-        });
-        state = states.join(', ');
+        }
       }
       
-      // Fallback to the entire cell text if no links were found
+      // If we still don't have a state, try to get it from existing data
+      if (!state && existingParkMap.has(name)) {
+        state = existingParkMap.get(name)?.state || '';
+      }
+      
+      // Last fallback - use the raw location text but clean it up
       if (!state) {
-        state = $(columns[2]).text().trim().replace(/\[\d+\]/g, '').trim();
+        state = locationCell.replace(/\[\d+\]/g, '').replace(/\d+°\d+′[NS].*$/, '').trim();
+        // If state is too long or contains coordinates, use a generic value
+        if (state.length > 50 || state.includes('°')) {
+          state = 'United States';
+        }
       }
       
       // Extract year established
