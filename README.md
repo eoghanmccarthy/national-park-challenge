@@ -76,12 +76,27 @@ The application uses data about US National Parks from authoritative sources, in
 - Park descriptions and types
 - Park images from Wikipedia and other public domain sources
 
-## Getting Started
+## Local Development
 
-1. The application is already running at the provided URL
-2. Vote between the two parks presented by clicking "Choose This Park"
-3. View current rankings and recent votes on the main page
-4. Enjoy exploring America's beautiful National Parks!
+1. Install dependencies:
+```bash
+npm install
+```
+
+2. Set up the database:
+- Ensure PostgreSQL is running and create a database
+- Set the `DATABASE_URL` environment variable to your database connection string
+- Run database migrations:
+```bash
+npm run db:push
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+The application will be available at `http://0.0.0.0:5000`
 
 ## How the ELO Rating System Works
 
