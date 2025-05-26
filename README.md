@@ -2,8 +2,6 @@
 
 An interactive web application for voting on and ranking US National Parks using the ELO ranking system.
 
-![National Parks Voting App](attached_assets/Screenshot%202025-04-09%20at%2017.00.35_1744185691579.png)
-
 ## About the App
 
 This application allows users to:
@@ -14,14 +12,6 @@ This application allows users to:
 - Explore a comprehensive list of US National Parks with details and images
 
 The ranking system uses a chess-inspired ELO algorithm, which dynamically adjusts park ratings based on win/loss outcomes and the relative strength (current rating) of each competitor.
-
-## Key Features
-
-- **Head-to-Head Voting**: Simple interface for choosing between two parks at a time
-- **Real-time Rankings**: See how parks move up and down in the rankings after each vote
-- **Park Details**: View information about each park including location, establishment date, and description
-- **Persistent Rankings**: Database-backed storage ensures rankings persist between sessions
-- **Visual Park Categories**: Color-coded by park type (forest, mountain, canyon, etc.)
 
 ## Technology Stack
 
@@ -69,13 +59,6 @@ The ranking system uses a chess-inspired ELO algorithm, which dynamically adjust
 - `/shared`: Code shared between frontend and backend
   - `/schema.ts`: Database schema definitions
 
-## Data Sources
-
-The application uses data about US National Parks from authoritative sources, including:
-- Park names, locations, and establishment dates
-- Park descriptions and types
-- Park images from Wikipedia and other public domain sources
-
 ## Local Development
 
 1. Install dependencies:
@@ -97,16 +80,6 @@ npm run dev
 ```
 
 The application will be available at `http://0.0.0.0:5000`
-
-## How the ELO Rating System Works
-
-The ELO rating system works by:
-1. Each park starts with a base rating (1500)
-2. When parks compete, the winning park gains points and the losing park loses points
-3. The amount of points transferred depends on the expected outcome:
-   - If a highly-rated park beats a lower-rated park (expected outcome), few points are transferred
-   - If a lower-rated park beats a higher-rated park (unexpected outcome), many points are transferred
-4. Over time, this creates a statistically significant ranking of parks based on user preferences
 
 ## License
 
